@@ -9,75 +9,454 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <!-- Your own stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <title>Welcome to SpringWeb!</title>
+    <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/footable.bootstrap.css" rel="stylesheet">
+    <style>
+      .tablesorter-pager .btn-group-sm .btn {
+        font-size: 1.2em; /* make pager arrows more visible */
+      }
+      </style>
+    <title>ÆlveTRI 2020</title>
   </head>
-  <body>
-    <!--
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">ÆlveTRI2020</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#services">Etappeinfo</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#portfolio">Resultater</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#contact">Kart</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h1 class="mb-1">ÆlveTRI 2020</h1>
+        <h3 class="mb-5">
+          <em>Arrangeres 29 august - uansett forhold!</em>
+        </h3>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Les mer her</a>
+      </div>
+      <div class="overlay"></div>
+    </header>
+
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2>Alt du trenger å vite om ÆlveTRI 2020</h2>
+            <p class="lead mb-5">
+              Startskuddet går kl 12:00 som vanlig og det anbefales å møte opp kl 11:00 ved Søren Paulsens vei 18 (skiftesone 2).
+              Vi går fra skiftesone 2 videre til skifteson 1 og så til stedet der vi starter Elveparken Buskerudveien 217.<br/>
+              Det er gjort litt arbeid der man går opp av vannet og inn i skiftesone 1 ved det gule huset. 
+              Gå derfor opp av vannet 5-10 meter før det gule huset og gjerdet. Enkleste er å bruke de store stenene i elvekanten til å gå opp av vannet på.
+            </p>
+            <p class="lead mb-5">
+              Svømme etappen starter ved borettslaget Elveparken Vest ned elva og i land ved overfarten til Langesøy.<br/>
+              Sykkel etappen sykler man opp til Mjøndalen, over brua ned til Gulskogen, over brua opp igjen til Pålsøya.<br/>
+              Løpe etappen løper man opp langs elva til bommen ved Musøya og tilbake igjen til målgang og jubelbrus!!
+            </p>
+            <p class="lead mb-5">
+              Startsone - våtdrakt, svømmebriller og badehette<br/>
+              Skiftesone 1 - sykkel og skift til sykkel etappen<br/>
+              Skiftesone 2 - løpesko og skift til løpe etappen
+            </p>
+            <!--<p class="lead mb-5">
+              Vil du begynne med triathlon så ler mer på <a href="http://drammentriathlon.no/">Drammen Triathlon Club</a>!
+            </p>-->
+            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Videre til etappe info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="content-section bg-primary text-white text-center" id="services">
+      <div class="container">
+        <div class="content-section-heading">
+          <h3 class="text-secondary mb-0">Løpsdetaljer</h3>
+          <h2 class="mb-5">Etappeinformasjon</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-screen-smartphone"></i>
+            </span>
+            <h4>
+              <strong>Svømming</strong>
+            </h4>
+            <p class="text-faded mb-0">Distanse: 490 meter</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-pencil"></i>
+            </span>
+            <h4>
+              <strong>Sykling</strong>
+            </h4>
+            <p class="text-faded mb-0">Distanse: 16,7 km</p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-like"></i>
+            </span>
+            <h4>
+              <strong>Løping</strong>
+            </h4>
+            <p class="text-faded mb-0">Distanse: 3,3 km</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <span class="service-icon rounded-circle mx-auto mb-3">
+              <i class="icon-mustache"></i>
+            </span>
+            <h4>
+              <strong>Målgang</strong>
+            </h4>
+            <p class="text-faded mb-0">Oppe bak Lars sin leilighet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Callout --
+    <section class="callout">
+      <div class="container text-center">
+        <h2 class="mx-auto mb-5">Resultater</h2>
+        <!--<a class="btn btn-primary btn-xl" href="#services">Videre til bildegalleri</a>--
+        <div class="example">
+          <table id="sorting-example-1" class="table" data-sorting="true">
+            <thead>
+            <tr>
+              <th data-breakpoints="xs" data-type="number">Plassering</th>
+              <th>Navn</th>
+              <th data-breakpoints="xs">Svømming</th>
+              <th data-breakpoints="xs sm" data-type="time" data-format-string="hh:mm:ss">Sykling</th>
+              <th data-breakpoints="xs sm md" data-type="time" data-format-string="hh:mm:ss">Løping</th>
+              <th data-breakpoints="xs sm md" data-type="time" data-format-string="hh:mm:ss">Slutt tid</th>
+              <!--<th data-breakpoints="xs sm" data-type="date" data-format-string="MMMM Do YYYY">Started On</th>
+              <th data-breakpoints="xs sm md" data-type="date" data-format-string="MMMM Do YYYY">Date of Birth</th>--
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>Lars</td>
+              <td>00:08:34</td>
+              <td>00:29:49</td>
+              <td>00:15:56</td>
+              <td>00:54:19</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Thomas V</td>
+              <td>00:09:56</td>
+              <td>00:32:04</td>
+              <td>00:16:10</td>
+              <td>00:58:10</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Morten og Ole</td>
+              <td>00:10:40</td>
+              <td>00:33:35</td>
+              <td>00:15:17</td>
+              <td>00:59:32</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Bøyum</td>
+              <td>00:09:33</td>
+              <td>00:36:02</td>
+              <td>00:45:35</td>
+              <td>01:02:23</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Johannes</td>
+              <td>00:10:26</td>
+              <td>00:33:45</td>
+              <td>00:19:14</td>
+              <td>01:03:25</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Torbjørn</td>
+              <td>00:11:47</td>
+              <td>00:38:29</td>
+              <td>00:17:16</td>
+              <td>01:07:32</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Thomas K</td>
+              <td>00:09:04</td>
+              <td>00:38:29</td>
+              <td>00:20:22</td>
+              <td>01:07:55</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Heidi</td>
+              <td>00:11:40</td>
+              <td>00:46:38</td>
+              <td>00:16:38</td>
+              <td>01:14:56</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Tom Henning</td>
+              <td>00:12:36</td>
+              <td>00:52:24</td>
+              <td>00:13:02</td>
+              <td>01:18:02</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Marianne</td>
+              <td>00:12:41</td>
+              <td>00:54:26</td>
+              <td>00:24:05</td>
+              <td>01:31:12</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  -->
+    <!-- Portfolio -->
+    <section class="content-section" id="portfolio">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h3 class="text-secondary mb-0">Resultatliste</h3>
+          <h2 class="mb-5">ÆlveTRI 2020</h2>
+        </div>
+        <!--
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Ælvetri 2019</div>
+                  <p class="mb-0">Deltakerne er klare til start</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/2019/2019-1.jpg" alt="">
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Ælvetri 2019</div>
+                  <p class="mb-0">Fullførte!
+
+                  </p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/2019/2019-3.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">ÆlveTRI 2018</div>
+                  <p class="mb-0">Start!</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/2018/2018-1.jpg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">ÆlveTRI 2018</div>
+                  <p class="mb-0">Fullført!</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/2018/2018-2.jpg" alt="">
+            </a>
+          </div>
+        </div>-->
+        <div class="example">
+          <table id="sorting-example-1" class="table" data-sorting="true">
+            <thead>
+            <tr>
+              <th data-breakpoints="xs" data-type="number">Plassering</th>
+              <th>Navn</th>
+              <th data-breakpoints="xs">Svømming</th>
+              <th data-breakpoints="xs sm" data-type="time" data-format-string="hh:mm:ss">Sykling</th>
+              <th data-breakpoints="xs sm md" data-type="time" data-format-string="hh:mm:ss">Løping</th>
+              <th data-breakpoints="xs sm md" data-type="time" data-format-string="hh:mm:ss">Slutt tid</th>
+              <!--<th data-breakpoints="xs sm" data-type="date" data-format-string="MMMM Do YYYY">Started On</th>
+              <th data-breakpoints="xs sm md" data-type="date" data-format-string="MMMM Do YYYY">Date of Birth</th>-->
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td>Lars</td>
+              <td>00:08:34</td>
+              <td>00:29:49</td>
+              <td>00:15:56</td>
+              <td>00:54:19</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Thomas V</td>
+              <td>00:09:56</td>
+              <td>00:32:04</td>
+              <td>00:16:10</td>
+              <td>00:58:10</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Morten og Ole</td>
+              <td>00:10:40</td>
+              <td>00:33:35</td>
+              <td>00:15:17</td>
+              <td>00:59:32</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Bøyum</td>
+              <td>00:09:33</td>
+              <td>00:36:02</td>
+              <td>00:45:35</td>
+              <td>01:02:23</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Johannes</td>
+              <td>00:10:26</td>
+              <td>00:33:45</td>
+              <td>00:19:14</td>
+              <td>01:03:25</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Torbjørn</td>
+              <td>00:11:47</td>
+              <td>00:38:29</td>
+              <td>00:17:16</td>
+              <td>01:07:32</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Thomas K</td>
+              <td>00:09:04</td>
+              <td>00:38:29</td>
+              <td>00:20:22</td>
+              <td>01:07:55</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Heidi</td>
+              <td>00:11:40</td>
+              <td>00:46:38</td>
+              <td>00:16:38</td>
+              <td>01:14:56</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Tom Henning</td>
+              <td>00:12:36</td>
+              <td>00:52:24</td>
+              <td>00:13:02</td>
+              <td>01:18:02</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Marianne</td>
+              <td>00:12:41</td>
+              <td>00:54:26</td>
+              <td>00:24:05</td>
+              <td>01:31:12</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action --
+    <section class="content-section bg-primary text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+        <a href="#!" class="btn btn-xl btn-light mr-4">Click Me!</a>
+        <a href="#!" class="btn btn-xl btn-dark">Look at Me!</a>
+      </div>
+    </section>
+  -->
+    <!-- Map -->
+    <div id="contact" class="map">
+      <!--<iframe src="https://maps.google.com/maps?q=59%C2%B045'14.5%22N%2010%C2%B006'07.4%22E&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>-->
+      <iframe src="https://maps.google.com/maps?q=59%C2%B045'14.5%22N%2010%C2%B006'07.4%22E&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      <br />
+      <small>
+        <a href="https://maps.google.com/maps?q=59%C2%B045'14.5%22N%2010%C2%B006'07.4%22E&t=&z=13&ie=UTF8&iwloc=&output=embed"></a>
+        
+      </small>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <ul class="list-inline mb-5">
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/events/1031211273910781">
+              <i class="icon-social-facebook"></i>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/events/1031211273910781">
+              <i class="icon-social-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="social-link rounded-circle text-white" href="https://www.facebook.com/events/1031211273910781">
+              <i class="icon-social-github"></i>
+            </a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <p class="text-muted small mb-0">Copyright &copy; SpringWeb 2020</p>
       </div>
-    </nav>
-    -->
-    <div class="container px-lg-5">
-      <div class="row">
-        <div class="col-sm py-3 px-lg-5">
-          <img src="img/logo.jpg" class="img-fluid rounded mx-auto d-block" alt="Responsive image">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm py-3 px-lg-5">
-          &nbsp;
-        </div>
-        <div class="col-sm py-3 px-lg-5">
-          <a href="https://mailchi.mp/a16a78e14dc1/elvetri">
-            <button type="button" class="btn btn-primary">Motta Ælvetri nyhetsbrev</button>
-          </a>
-        </div>
-        <div class="col-sm py-3 px-lg-5">
-          &nbsp;
-        </div>
-      </div>
-      <!--
-      <div class="row">
-        <div class="col-sm py-3 px-lg-5">
-          <button type="button" class="btn btn-primary">Meld deg inn i Ælvetri</button>
-        </div>
-      </div>
-      -->
-    </div>
+    </footer>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
 
      <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -86,5 +465,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="js/footable.js"></script>
+    <!-- Initialize FooTable -->
+<script>
+	jQuery(function($){
+		$('#sorting-example-1').footable();
+	});
+</script>
   </body>
 </html>
